@@ -1,4 +1,5 @@
 {
+  "repositories": ["yuta0805/demo-renovate-github-actions"],
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "dependencyDashboard": true,
   "extends": [],
