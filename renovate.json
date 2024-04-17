@@ -3,6 +3,6 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "dependencyDashboard": true,
   "extends": [
-    "github>yuta0805/renovate-config:renovate"
+    "github>yuta0805/renovate-config"
   ]
 }
