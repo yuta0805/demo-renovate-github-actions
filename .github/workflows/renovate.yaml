@@ -4,6 +4,9 @@ on:
   issues:
     types:
       - edited
+  pull_request:
+    types:
+      - closed
 
 jobs:
   renovate:
