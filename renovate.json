@@ -2,17 +2,7 @@
   "repositories": ["yuta0805/demo-renovate-github-actions"],
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "dependencyDashboard": true,
-  "extends": [],
-  "timezone": "Asia/Tokyo",
-  "prConcurrentLimit": 2,
-  "prHourlyLimit": 0,
-  "rebaseWhen": "behind-base-branch",
-  "packageRules": [
-    {
-      "matchDatasources": ["terraform-module"],
-      "additionalBranchPrefix": "{{packageFileDir}}-",
-      "commitMessageSuffix": "({{packageFileDir}})",
-      "groupName": "terraform"
-    }
+  "extends": [
+    "github>yuta0805/renovate-config:renovate"
   ]
 }
