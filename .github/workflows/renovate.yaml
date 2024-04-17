@@ -1,5 +1,10 @@
 name: Renovate
-on: [workflow_dispatch]
+on:
+  workflow_dispatch:
+  issues:
+    types:
+      - edited
+
 jobs:
   renovate:
     runs-on: ubuntu-latest
