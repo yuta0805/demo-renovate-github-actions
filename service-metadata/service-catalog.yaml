@@ -1,0 +1,7 @@
+clustername:
+  service-name1:
+    name: nginx-server-4.1.0
+  service-name2:
+    name: admin-console-1.13.1
+  service-name3:
+    name: resque-worker-2.0.0
