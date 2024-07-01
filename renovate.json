@@ -1,8 +1,20 @@
 {
-  "repositories": ["yuta0805/demo-renovate-github-actions"],
-  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "dependencyDashboard": true,
-  "extends": [
-    "github>yuta0805/renovate-config:renovate"
-  ]
+    "dependencyDashboard": true,
+    "prCreation": "approval",
+    "timezone": "Asia/Tokyo",
+    "prConcurrentLimit": 0,
+    "prHourlyLimit": 0,
+    "rebaseWhen": "behind-base-branch",
+    "packageRules": [
+        {
+            "matchManagers": ["terraform"],
+            "matchDatasources": ["terraform-module"],
+            "groupName": "terraform"
+        },
+        {
+            "matchManagers": ["terraform"],
+            "matchDatasources": ["terraform-provider"],
+            "enabled": false
+        }
+    ]
 }
